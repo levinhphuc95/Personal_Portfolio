@@ -474,30 +474,54 @@ section {
   background: none;
 }
 
-.skills .progress .skill {
-  padding: 10px 0;
-  margin: 0 0 6px 0;
-  text-transform: uppercase;
-  display: block;
+.skills .resume-item {
+  padding: 0 0 20px 20px;
+  margin-top: -2px;
+  border-left: 2px solid #0563bb;
+  position: relative;
+}
+
+.skills .resume-item h4 {
+  line-height: 18px;
+  font-size: 18px;
   font-weight: 600;
+  text-transform: uppercase;
   font-family: "Poppins", sans-serif;
-  color: #45505b;
+  color: #0563bb;
+  margin-bottom: 10px;
 }
 
-.skills .progress .skill .val {
-  float: right;
-  font-style: normal;
+.skills .resume-item h5 {
+  font-size: 16px;
+  background: #f7f8f9;
+  padding: 5px 15px;
+  display: inline-block;
+  font-weight: 600;
+  margin-bottom: 10px;
 }
 
-.skills .progress-bar-wrap {
-  background: #f2f3f5;
+.skills .resume-item ul {
+  padding-left: 20px;
 }
 
-.skills .progress-bar {
-  width: 1px;
-  height: 10px;
-  transition: 0.9s;
-  background-color: #0563bb;
+.skills .resume-item ul li {
+  padding-bottom: 10px;
+}
+
+.skills .resume-item:last-child {
+  padding-bottom: 0;
+}
+
+.skills .resume-item::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50px;
+  left: -9px;
+  top: 0;
+  background: #fff;
+  border: 2px solid #0563bb;
 }
 
 /*--------------------------------------------------------------
